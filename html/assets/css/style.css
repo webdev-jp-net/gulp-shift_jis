@@ -1,0 +1,190 @@
+@charset 'UTF-8';
+/* ==========================================================
+  reset
+========================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+div,
+p,
+form,
+blockquote,
+pre,
+figure {
+  margin: 0;
+  padding: 0;
+
+  font-size: 100%;
+}
+
+div,
+p,
+form {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* table
+..................................... */
+table {
+  border-spacing: 0; 
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0;
+}
+
+/* head
+..................................... */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+
+  font-size: 100%;
+}
+
+/* list
+..................................... */
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* image
+..................................... */
+a img {
+  border: 0 none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+
+  vertical-align: middle;
+}
+
+/* text
+..................................... */
+em {
+  font-style: normal;
+}
+
+/* form
+..................................... */
+button,
+input,
+textarea {
+  resize: none; 
+  padding: 0;
+
+  background: transparent;
+
+  border: 0 none;
+  border-radius: 0;
+
+  -webkit-appearance: none;
+}
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input,
+textarea {
+  font-size: 16px;
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+  padding: 0;
+
+  font-size: 1rem;
+
+  background: transparent;
+
+  border-radius: 0;
+}
+
+select {
+  margin: 0;
+  padding: 0;
+
+  font-size: inherit;
+
+  vertical-align: middle;
+
+  color: inherit; 
+  background: none transparent;
+
+  border: 0;
+  border-radius: 0;
+
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+select:focus {
+  outline: none;
+}
+
+fieldset {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0 none;
+}
+
+label {
+  cursor: pointer;
+}
+
+/* smartphone
+..................................... */
+a,
+label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* html
+..................................... */
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', YuGothic, 'Meiryo', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================
+  style
+========================================================== */
+pre {
+  padding: 1em; 
+
+  font-family: 'ヒラギノ角ゴシック W0', '游ゴシック', 'メイリオ';
+  font-size: 2rem;
+  font-weight: normal;
+}
