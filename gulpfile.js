@@ -66,8 +66,8 @@ gulp.task('clean', function(callback) {
 //  htmlディレクトリからreleaseディレクトリへソースを複製
 gulp.task('copy', ['clean'], function() {
   gulp.src([
-    dir.html + '/**/*.*',
-    '!' + dir.html + '/lib/**/*.*' // ライブラリディレクトリは複製対象から除外
+    dir.html + '/**/*.+(html|js|css)',
+    '!' + dir.html + '/lib/**/*.*' // ライブラリディレクトリはまるごと除外
   ])
   .pipe(replace('UTF-8', 'shift_jis')) // 文字置換
   .pipe(crLfReplace({changeCode: 'CR+LF'})) // 改行コード変更
@@ -75,13 +75,14 @@ gulp.task('copy', ['clean'], function() {
   .pipe(gulp.dest(dir.release));
 });
 
-// Libraryを文字コードを変えず複製
-gulp.task('lib-copy', ['copy'], function() {
+// 文字コードを変えず複製
+gulp.task('plane-copy', ['copy'], function() {
   gulp.src([
+    dir.html + '/**/*.!(html|js|css)',
     dir.html + '/lib/**/*.*'
   ])
-  .pipe(gulp.dest('release/lib'));
+  .pipe(gulp.dest('release/'));
 });
 
 //  実行
-gulp.task('release', ['lib-copy']);
+gulp.task('release', ['plane-copy']);
