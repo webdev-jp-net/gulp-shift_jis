@@ -5,9 +5,37 @@
 /* ==========================================================
   style
 ========================================================== */
-pre {
-  font-family: 'ヒラギノ角ゴシック W0', '游ゴシック', 'メイリオ';
-  font-size: 2rem;
-  font-weight: normal;
-  padding: 1em;
+.pc-frame {
+  position: relative;
+
+  width: 98vmin;
+  height: 98vmin;
+  margin: 1vmin auto;
+
+  background: url(../img/desktoppc.svg) no-repeat;
+
+  p {
+    $v: 8.05%;
+
+    position: absolute;
+    top: $v * 1.75;
+    left: $v;
+    right: $v;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    width: 83.9%;
+    height: 48.5%;
+    padding: .75em 1em;
+
+    font-family: 'ヒラギノ角ゴシック W8', '游ゴシック', 'メイリオ';
+    font-size: 8vmin;
+    font-weight: normal;
+
+    text-align: center;
+
+    background: rgba(black, .1);
+  }
+
 }
